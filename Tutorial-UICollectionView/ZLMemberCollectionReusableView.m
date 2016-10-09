@@ -12,6 +12,10 @@
 
 @implementation ZLMemberCollectionReusableView
 
++ (CGFloat)reusableViewHeight {
+    return 10;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

@@ -12,4 +12,6 @@
 
 @interface ZLAdCollectionReusableView : UICollectionReusableView
 
++ (CGFloat)reusableViewHeight;
+
 @end

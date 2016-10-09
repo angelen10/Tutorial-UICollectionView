@@ -1,3 +1,9 @@
+> 对 UICollectionView 可谓是又爱又恨，爱的是它能做出很多很牛掰的界面，恨的是自己还没有好好的学习过这个 UICollectionView，故打算把学习过程记录下来，以供日后参考。
+
+
+
+# 知识铺垫
+
 #### UICollectionViewFlowLayout
 
 在创建 UITableView 的时候，我们使用
@@ -6,7 +12,7 @@
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style;
 ```
 
-style 参数是用于判断 UITableView 的类型是普通的还是分组的，如果不传入这个参数，默认的类型是普通的。
+来初始化，style 参数是用于判断 UITableView 的类型是普通的还是分组的，如果不传入这个参数，默认的类型是普通的。
 
 在 UICollectionView 中，UICollectionViewFlowLayout 是用来设置 cell 的布局的，在初始化 UICollectionView 的时候，一定要设置这个 layout 属性，否则不会显示。
 
@@ -39,7 +45,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewFlowLayout : UICollection
 // 如果每个组内容的边距都不一样，那么就要实现 UICollectionViewDelegateFlowLayout 代理的方法 ②
 @property (nonatomic) UIEdgeInsets sectionInset;
 
-// 阻尼效果，如果当 UICollectionView 的 cell 比较少，没有铺满一屏，默认是没有阻尼效果的，但是 UITableView 默认有阻尼效果，科科
+// 设置 Section header 和 footer 是否悬浮（和 UITableView 类似）
 // Set these properties to YES to get headers that pin to the top of the screen and footers that pin to the bottom while scrolling (similar to UITableView).
 @property (nonatomic) BOOL sectionHeadersPinToVisibleBounds NS_AVAILABLE_IOS(9_0);
 @property (nonatomic) BOOL sectionFootersPinToVisibleBounds NS_AVAILABLE_IOS(9_0);
@@ -210,3 +216,8 @@ UICollectionViewDelegate 代理方法
 @end
 ```
 
+
+
+# 实战
+
+直接 clone 项目看即可。

@@ -15,6 +15,7 @@
 		404AA9F11DAA5748001EA811 /* ZLDiscoverCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */; };
 		404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */; };
 		404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */; };
+		4088938D1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAdCollectionReusableView.m; sourceTree = "<group>"; };
 		404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMemberCollectionReusableView.h; sourceTree = "<group>"; };
 		404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMemberCollectionReusableView.m; sourceTree = "<group>"; };
+		4088938B1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
+		4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +68,8 @@
 		404AA9D01DA9DCCA001EA811 /* Tutorial-UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				404AA9D41DA9DCCA001EA811 /* AppDelegate.h */,
-				404AA9D51DA9DCCA001EA811 /* AppDelegate.m */,
-				404AA9D71DA9DCCA001EA811 /* ViewController.h */,
-				404AA9D81DA9DCCA001EA811 /* ViewController.m */,
-				404AA9EF1DAA5748001EA811 /* ZLDiscoverCollectionViewController.h */,
-				404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */,
-				404AA9F21DAA578D001EA811 /* ZLAdCollectionReusableView.h */,
-				404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */,
-				404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */,
-				404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */,
+				408893921DAAA41100726C6E /* Controllers */,
+				408893911DAAA3F000726C6E /* Views */,
 				404AA9D11DA9DCCA001EA811 /* Supporting Files */,
 			);
 			path = "Tutorial-UICollectionView";
@@ -83,12 +78,54 @@
 		404AA9D11DA9DCCA001EA811 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				404AA9D41DA9DCCA001EA811 /* AppDelegate.h */,
+				404AA9D51DA9DCCA001EA811 /* AppDelegate.m */,
 				404AA9DD1DA9DCCA001EA811 /* Assets.xcassets */,
 				404AA9DF1DA9DCCA001EA811 /* LaunchScreen.storyboard */,
 				404AA9E21DA9DCCA001EA811 /* Info.plist */,
 				404AA9D21DA9DCCA001EA811 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4088938E1DAAA3CB00726C6E /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				404AA9F21DAA578D001EA811 /* ZLAdCollectionReusableView.h */,
+				404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */,
+				404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */,
+				404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		4088938F1DAAA3DD00726C6E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4088938B1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.h */,
+				4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		408893911DAAA3F000726C6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4088938E1DAAA3CB00726C6E /* Layouts */,
+				4088938F1DAAA3DD00726C6E /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		408893921DAAA41100726C6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				404AA9D71DA9DCCA001EA811 /* ViewController.h */,
+				404AA9D81DA9DCCA001EA811 /* ViewController.m */,
+				404AA9EF1DAA5748001EA811 /* ZLDiscoverCollectionViewController.h */,
+				404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +201,7 @@
 				404AA9D91DA9DCCA001EA811 /* ViewController.m in Sources */,
 				404AA9D61DA9DCCA001EA811 /* AppDelegate.m in Sources */,
 				404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */,
+				4088938D1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m in Sources */,
 				404AA9D31DA9DCCA001EA811 /* main.m in Sources */,
 				404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */,
 				404AA9F11DAA5748001EA811 /* ZLDiscoverCollectionViewController.m in Sources */,
@@ -309,6 +347,7 @@
 				404AA9E71DA9DCCA001EA811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

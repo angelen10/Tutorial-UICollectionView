@@ -9,10 +9,14 @@
 // 参考网址：http://www.jianshu.com/p/cf616f73d596
 
 #import "ZLDiscoverCollectionViewController.h"
+#import "ZLDiscoverCollectionViewCell.h"
 #import "ZLAdCollectionReusableView.h"
 #import "ZLMemberCollectionReusableView.h"
 
-@interface ZLDiscoverCollectionViewController ()
+#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+
+@interface ZLDiscoverCollectionViewController ()<UICollectionViewDelegateFlowLayout>
 
 @end
 
@@ -28,70 +32,77 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCellReuseIdentifier];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    // Register cell classes，这里的 registerClass 和 dequeueReusableCell 可以封装在自定义的 cell 里面
+    [self.collectionView registerClass:[ZLDiscoverCollectionViewCell class] forCellWithReuseIdentifier:kCellReuseIdentifier];
     
     [self.collectionView registerClass:[ZLAdCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kAdReuseIdentifier];
     [self.collectionView registerClass:[ZLMemberCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kMemberReuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 0;
+    return 2;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 25;
+    } else if (section == 1) {
+        return 60;
+    }
+    
     return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellReuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
+    ZLDiscoverCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellReuseIdentifier forIndexPath:indexPath];
+    // 在这里传递一个 model 什么的
     return cell;
 }
 
 #pragma mark - <UICollectionViewDelegate>
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger section = indexPath.section;
     if (kind == UICollectionElementKindSectionHeader) {
-        
+        if (section == 0) {
+            ZLAdCollectionReusableView *adReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kAdReuseIdentifier forIndexPath:indexPath];
+            return adReusableView;
+        } else if (section == 1) {
+            ZLMemberCollectionReusableView *memberReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kMemberReuseIdentifier forIndexPath:indexPath];
+            return memberReusableView;
+        }
     }
     return nil;
 }
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
+#pragma mark - <UICollectionViewDelegateFlowLayout>
 
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger section = indexPath.section;
+    if (section == 0) {
+        return CGSizeMake(64, 64);
+    } else if (section == 1) {
+        return CGSizeMake(32, 12);
+    }
+    
+    return CGSizeZero;
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return CGSizeMake(SCREEN_WIDTH, [ZLAdCollectionReusableView reusableViewHeight]);
+    } else if (section == 1) {
+        return CGSizeMake(SCREEN_WIDTH, [ZLMemberCollectionReusableView reusableViewHeight]);
+    }
+    
+    return CGSizeZero;
 }
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
