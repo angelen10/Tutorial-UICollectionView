@@ -52,7 +52,7 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     if (section == 0) {
         return 25;
     } else if (section == 1) {
-        return 60;
+        return 200;
     }
     
     return 0;
@@ -89,7 +89,7 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     if (section == 0) {
         return CGSizeMake(64, 64);
     } else if (section == 1) {
-        return CGSizeMake(32, 12);
+        return CGSizeMake(32, 44);
     }
     
     return CGSizeZero;
@@ -103,6 +103,16 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     }
     
     return CGSizeZero;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ZLDiscoverCollectionViewCell *cell = (ZLDiscoverCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    UIViewController *discoverDetailVC = [[UIViewController alloc] init];
+    discoverDetailVC.title = [NSString stringWithFormat:@"%zd - %zd", indexPath.section, indexPath.item];
+    discoverDetailVC.view.backgroundColor = [cell getCellBackgroundColor];
+    [self.navigationController pushViewController:discoverDetailVC animated:YES];
 }
 
 @end

@@ -25,4 +25,8 @@
     self.contentView.backgroundColor = RANDOM_COLOR;
 }
 
+- (UIColor *)getCellBackgroundColor {
+    return self.contentView.backgroundColor;
+}
+
 @end

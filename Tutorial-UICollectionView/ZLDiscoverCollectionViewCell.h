@@ -10,4 +10,6 @@
 
 @interface ZLDiscoverCollectionViewCell : UICollectionViewCell
 
+- (UIColor *)getCellBackgroundColor;
+
 @end
