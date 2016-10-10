@@ -15,6 +15,9 @@
 		404AA9F11DAA5748001EA811 /* ZLDiscoverCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */; };
 		404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */; };
 		404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */; };
+		404D9C021DAB8E5800C37987 /* ZLInfiniteScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C011DAB8E5800C37987 /* ZLInfiniteScrollingView.m */; };
+		404D9C061DAB8EB600C37987 /* ZLInfiniteScrollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C051DAB8EB600C37987 /* ZLInfiniteScrollingCell.m */; };
+		404D9C091DAB939B00C37987 /* ZLDiscoverDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C081DAB939B00C37987 /* ZLDiscoverDetailViewController.m */; };
 		4088938D1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,12 @@
 		404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAdCollectionReusableView.m; sourceTree = "<group>"; };
 		404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMemberCollectionReusableView.h; sourceTree = "<group>"; };
 		404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMemberCollectionReusableView.m; sourceTree = "<group>"; };
+		404D9C001DAB8E5800C37987 /* ZLInfiniteScrollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLInfiniteScrollingView.h; sourceTree = "<group>"; };
+		404D9C011DAB8E5800C37987 /* ZLInfiniteScrollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLInfiniteScrollingView.m; sourceTree = "<group>"; };
+		404D9C041DAB8EB600C37987 /* ZLInfiniteScrollingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLInfiniteScrollingCell.h; sourceTree = "<group>"; };
+		404D9C051DAB8EB600C37987 /* ZLInfiniteScrollingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLInfiniteScrollingCell.m; sourceTree = "<group>"; };
+		404D9C071DAB939B00C37987 /* ZLDiscoverDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDiscoverDetailViewController.h; sourceTree = "<group>"; };
+		404D9C081DAB939B00C37987 /* ZLDiscoverDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDiscoverDetailViewController.m; sourceTree = "<group>"; };
 		4088938B1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
 		4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,9 +97,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		404D9C031DAB8E9000C37987 /* ZLInfiniteScrollingView */ = {
+			isa = PBXGroup;
+			children = (
+				404D9C001DAB8E5800C37987 /* ZLInfiniteScrollingView.h */,
+				404D9C011DAB8E5800C37987 /* ZLInfiniteScrollingView.m */,
+				404D9C041DAB8EB600C37987 /* ZLInfiniteScrollingCell.h */,
+				404D9C051DAB8EB600C37987 /* ZLInfiniteScrollingCell.m */,
+			);
+			name = ZLInfiniteScrollingView;
+			sourceTree = "<group>";
+		};
 		4088938E1DAAA3CB00726C6E /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				404D9C031DAB8E9000C37987 /* ZLInfiniteScrollingView */,
 				404AA9F21DAA578D001EA811 /* ZLAdCollectionReusableView.h */,
 				404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */,
 				404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */,
@@ -124,6 +145,8 @@
 				404AA9D81DA9DCCA001EA811 /* ViewController.m */,
 				404AA9EF1DAA5748001EA811 /* ZLDiscoverCollectionViewController.h */,
 				404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */,
+				404D9C071DAB939B00C37987 /* ZLDiscoverDetailViewController.h */,
+				404D9C081DAB939B00C37987 /* ZLDiscoverDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -198,6 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404D9C091DAB939B00C37987 /* ZLDiscoverDetailViewController.m in Sources */,
+				404D9C061DAB8EB600C37987 /* ZLInfiniteScrollingCell.m in Sources */,
+				404D9C021DAB8E5800C37987 /* ZLInfiniteScrollingView.m in Sources */,
 				404AA9D91DA9DCCA001EA811 /* ViewController.m in Sources */,
 				404AA9D61DA9DCCA001EA811 /* AppDelegate.m in Sources */,
 				404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */,

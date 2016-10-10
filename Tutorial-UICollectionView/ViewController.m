@@ -31,7 +31,7 @@
     layout.minimumInteritemSpacing = 9;
     layout.sectionInset = UIEdgeInsetsMake(16, 8, 16, 8);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    layout.sectionHeadersPinToVisibleBounds = YES; // Section header 悬浮，和 UITableView 类似
+    layout.sectionHeadersPinToVisibleBounds = NO; // Section header 悬浮，和 UITableView 类似
     ZLDiscoverCollectionViewController *discoverVC = [[ZLDiscoverCollectionViewController alloc] initWithCollectionViewLayout:layout];
     discoverVC.title = @"Discover";
     [self.navigationController pushViewController:discoverVC animated:YES];

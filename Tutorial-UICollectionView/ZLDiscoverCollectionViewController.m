@@ -12,6 +12,7 @@
 #import "ZLDiscoverCollectionViewCell.h"
 #import "ZLAdCollectionReusableView.h"
 #import "ZLMemberCollectionReusableView.h"
+#import "ZLDiscoverDetailViewController.h"
 
 #define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
@@ -32,13 +33,16 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor orangeColor];
     
     // Register cell classes，这里的 registerClass 和 dequeueReusableCell 可以封装在自定义的 cell 里面
     [self.collectionView registerClass:[ZLDiscoverCollectionViewCell class] forCellWithReuseIdentifier:kCellReuseIdentifier];
     
     [self.collectionView registerClass:[ZLAdCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kAdReuseIdentifier];
     [self.collectionView registerClass:[ZLMemberCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kMemberReuseIdentifier];
+    
+    // 一开始实际内容距离顶部 100，但是还能滑动上去(增加额外的滚动区域)
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0);
 }
 
 #pragma mark - <UICollectionViewDataSource>
@@ -109,7 +113,7 @@ static NSString *const kMemberReuseIdentifier = @"kMemberReuseIdentifier";
     
     ZLDiscoverCollectionViewCell *cell = (ZLDiscoverCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
-    UIViewController *discoverDetailVC = [[UIViewController alloc] init];
+    ZLDiscoverDetailViewController *discoverDetailVC = [[ZLDiscoverDetailViewController alloc] init];
     discoverDetailVC.title = [NSString stringWithFormat:@"%zd - %zd", indexPath.section, indexPath.item];
     discoverDetailVC.view.backgroundColor = [cell getCellBackgroundColor];
     [self.navigationController pushViewController:discoverDetailVC animated:YES];
