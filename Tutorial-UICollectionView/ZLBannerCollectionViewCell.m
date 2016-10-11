@@ -31,7 +31,6 @@
 
 - (void)setupUIElements {
     // 在这里做一些初始化操作
-//    self.contentView.backgroundColor = RANDOM_COLOR;
     
     self.imageLabel = [[UILabel alloc] initWithFrame:self.bounds];
     self.imageLabel.textColor = RANDOM_COLOR;
@@ -39,16 +38,21 @@
     [self addSubview:self.imageLabel];
     
     self.photoImageView = [[UIImageView alloc] init];
-    self.photoImageView.frame = CGRectMake(0, 0, 400, 400);
-    self.photoImageView.image = [UIImage imageNamed:@"bg"];
+    self.photoImageView.frame = self.bounds;
+    self.photoImageView.backgroundColor = [UIColor orangeColor];
+    self.photoImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:self.photoImageView];
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+}
+
 - (void)setUrl:(NSString *)url {
-    NSLog(@"--------> %@", url);
+    _url = url;
     self.imageLabel.text = url;
     
-    [self.photoImageView sd_setImageWithURL:[NSURL URLWithString:url]];
+    [self.photoImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"bg"]];
 }
 
 @end

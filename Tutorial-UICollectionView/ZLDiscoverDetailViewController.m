@@ -27,10 +27,10 @@
     }];
     [self.view addSubview:bannerView];
     
-    bannerView.models = @[@"https://objccn.io/images/issues/issue-3/SV7.png",
-                          @"https://objccn.io/images/issues/issue-3/SV6.png",
-                          @"https://objccn.io/images/issues/issue-3/SV5.png",
-                          @"https://objccn.io/images/issues/issue-3/SV4.png"];
+    bannerView.models = @[@"http://upload-images.jianshu.io/upload_images/1867003-930cad9e61c621ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                          @"http://upload-images.jianshu.io/upload_images/1867003-b48a0bd54474aa74.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                          @"http://upload-images.jianshu.io/upload_images/1867003-0a584a93145d5afe.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                          @"http://upload-images.jianshu.io/upload_images/1867003-dc0cc7b2b118ebc7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     
     UIImageView *imageView =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
     [self.view addSubview:imageView];
