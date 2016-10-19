@@ -9,6 +9,7 @@
 #import "ZLDiscoverDetailViewController.h"
 #import "ZLInfiniteScrollingView.h"
 #import "ZLBannerView.h"
+#import "ZLPhotoPreviewViewController.h"
 
 @interface ZLDiscoverDetailViewController ()
 
@@ -22,8 +23,11 @@
 //    ZLInfiniteScrollingView *infiniteScrollingView = [[ZLInfiniteScrollingView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 250)];
 //    [self.view addSubview:infiniteScrollingView];
 
+    __weak typeof(self) weakSelf = self;
     ZLBannerView *bannerView = [ZLBannerView bannerViewWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 250) placeholderImage:nil block:^(NSUInteger didselectIndex) {
-        
+        ZLPhotoPreviewViewController *vc = [[ZLPhotoPreviewViewController alloc] init];
+        [weakSelf showDetailViewController:vc sender:nil];
+//        [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     [self.view addSubview:bannerView];
     

@@ -15,6 +15,20 @@
 		404AA9F11DAA5748001EA811 /* ZLDiscoverCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */; };
 		404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */; };
 		404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */; };
+		404C8B5C1DAC871E00DBE93B /* ZLPhotoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B5B1DAC871E00DBE93B /* ZLPhotoPreviewView.m */; };
+		404C8B5F1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B5E1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.m */; };
+		404C8B621DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B611DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.m */; };
+		404C8B651DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B641DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.m */; };
+		404C8B801DAC97D200DBE93B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B681DAC97D200DBE93B /* MASCompositeConstraint.m */; };
+		404C8B811DAC97D200DBE93B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B6B1DAC97D200DBE93B /* MASConstraint.m */; };
+		404C8B821DAC97D200DBE93B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B6D1DAC97D200DBE93B /* MASConstraintMaker.m */; };
+		404C8B831DAC97D200DBE93B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B6F1DAC97D200DBE93B /* MASLayoutConstraint.m */; };
+		404C8B841DAC97D200DBE93B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B731DAC97D200DBE93B /* MASViewAttribute.m */; };
+		404C8B851DAC97D200DBE93B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B751DAC97D200DBE93B /* MASViewConstraint.m */; };
+		404C8B861DAC97D200DBE93B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B771DAC97D200DBE93B /* NSArray+MASAdditions.m */; };
+		404C8B871DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B7A1DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		404C8B881DAC97D200DBE93B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B7C1DAC97D200DBE93B /* View+MASAdditions.m */; };
+		404C8B891DAC97D200DBE93B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C8B7F1DAC97D200DBE93B /* ViewController+MASAdditions.m */; };
 		404D9C021DAB8E5800C37987 /* ZLInfiniteScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C011DAB8E5800C37987 /* ZLInfiniteScrollingView.m */; };
 		404D9C061DAB8EB600C37987 /* ZLInfiniteScrollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C051DAB8EB600C37987 /* ZLInfiniteScrollingCell.m */; };
 		404D9C091DAB939B00C37987 /* ZLDiscoverDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C081DAB939B00C37987 /* ZLDiscoverDetailViewController.m */; };
@@ -55,6 +69,39 @@
 		404AA9F31DAA578D001EA811 /* ZLAdCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAdCollectionReusableView.m; sourceTree = "<group>"; };
 		404AA9F51DAA57B0001EA811 /* ZLMemberCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMemberCollectionReusableView.h; sourceTree = "<group>"; };
 		404AA9F61DAA57B0001EA811 /* ZLMemberCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMemberCollectionReusableView.m; sourceTree = "<group>"; };
+		404C8B5A1DAC871E00DBE93B /* ZLPhotoPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPreviewView.h; sourceTree = "<group>"; };
+		404C8B5B1DAC871E00DBE93B /* ZLPhotoPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPreviewView.m; sourceTree = "<group>"; };
+		404C8B5D1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPreviewViewCollectionViewCell.h; sourceTree = "<group>"; };
+		404C8B5E1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPreviewViewCollectionViewCell.m; sourceTree = "<group>"; };
+		404C8B601DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPreviewViewModel.h; sourceTree = "<group>"; };
+		404C8B611DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPreviewViewModel.m; sourceTree = "<group>"; };
+		404C8B631DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		404C8B641DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		404C8B671DAC97D200DBE93B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		404C8B681DAC97D200DBE93B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		404C8B691DAC97D200DBE93B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		404C8B6A1DAC97D200DBE93B /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		404C8B6B1DAC97D200DBE93B /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		404C8B6C1DAC97D200DBE93B /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		404C8B6D1DAC97D200DBE93B /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		404C8B6E1DAC97D200DBE93B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		404C8B6F1DAC97D200DBE93B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		404C8B701DAC97D200DBE93B /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		404C8B711DAC97D200DBE93B /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		404C8B721DAC97D200DBE93B /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		404C8B731DAC97D200DBE93B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		404C8B741DAC97D200DBE93B /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		404C8B751DAC97D200DBE93B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		404C8B761DAC97D200DBE93B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		404C8B771DAC97D200DBE93B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		404C8B781DAC97D200DBE93B /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		404C8B791DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		404C8B7A1DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		404C8B7B1DAC97D200DBE93B /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		404C8B7C1DAC97D200DBE93B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		404C8B7D1DAC97D200DBE93B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		404C8B7E1DAC97D200DBE93B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		404C8B7F1DAC97D200DBE93B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		404D9C001DAB8E5800C37987 /* ZLInfiniteScrollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLInfiniteScrollingView.h; sourceTree = "<group>"; };
 		404D9C011DAB8E5800C37987 /* ZLInfiniteScrollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLInfiniteScrollingView.m; sourceTree = "<group>"; };
 		404D9C041DAB8EB600C37987 /* ZLInfiniteScrollingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLInfiniteScrollingCell.h; sourceTree = "<group>"; };
@@ -146,11 +193,55 @@
 				404AA9D41DA9DCCA001EA811 /* AppDelegate.h */,
 				404AA9D51DA9DCCA001EA811 /* AppDelegate.m */,
 				404AA9DD1DA9DCCA001EA811 /* Assets.xcassets */,
-				404AA9DF1DA9DCCA001EA811 /* LaunchScreen.storyboard */,
 				404AA9E21DA9DCCA001EA811 /* Info.plist */,
 				404AA9D21DA9DCCA001EA811 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		404C8B591DAC86D100DBE93B /* ZLPhotoPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				404C8B5A1DAC871E00DBE93B /* ZLPhotoPreviewView.h */,
+				404C8B5B1DAC871E00DBE93B /* ZLPhotoPreviewView.m */,
+				404C8B5D1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.h */,
+				404C8B5E1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.m */,
+				404C8B601DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.h */,
+				404C8B611DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.m */,
+			);
+			name = ZLPhotoPreviewView;
+			sourceTree = "<group>";
+		};
+		404C8B661DAC97D200DBE93B /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				404C8B671DAC97D200DBE93B /* MASCompositeConstraint.h */,
+				404C8B681DAC97D200DBE93B /* MASCompositeConstraint.m */,
+				404C8B691DAC97D200DBE93B /* MASConstraint+Private.h */,
+				404C8B6A1DAC97D200DBE93B /* MASConstraint.h */,
+				404C8B6B1DAC97D200DBE93B /* MASConstraint.m */,
+				404C8B6C1DAC97D200DBE93B /* MASConstraintMaker.h */,
+				404C8B6D1DAC97D200DBE93B /* MASConstraintMaker.m */,
+				404C8B6E1DAC97D200DBE93B /* MASLayoutConstraint.h */,
+				404C8B6F1DAC97D200DBE93B /* MASLayoutConstraint.m */,
+				404C8B701DAC97D200DBE93B /* Masonry.h */,
+				404C8B711DAC97D200DBE93B /* MASUtilities.h */,
+				404C8B721DAC97D200DBE93B /* MASViewAttribute.h */,
+				404C8B731DAC97D200DBE93B /* MASViewAttribute.m */,
+				404C8B741DAC97D200DBE93B /* MASViewConstraint.h */,
+				404C8B751DAC97D200DBE93B /* MASViewConstraint.m */,
+				404C8B761DAC97D200DBE93B /* NSArray+MASAdditions.h */,
+				404C8B771DAC97D200DBE93B /* NSArray+MASAdditions.m */,
+				404C8B781DAC97D200DBE93B /* NSArray+MASShorthandAdditions.h */,
+				404C8B791DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.h */,
+				404C8B7A1DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				404C8B7B1DAC97D200DBE93B /* View+MASAdditions.h */,
+				404C8B7C1DAC97D200DBE93B /* View+MASAdditions.m */,
+				404C8B7D1DAC97D200DBE93B /* View+MASShorthandAdditions.h */,
+				404C8B7E1DAC97D200DBE93B /* ViewController+MASAdditions.h */,
+				404C8B7F1DAC97D200DBE93B /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		404D9C031DAB8E9000C37987 /* ZLInfiniteScrollingView */ = {
@@ -178,6 +269,7 @@
 		404D9C111DABAB2000C37987 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				404C8B661DAC97D200DBE93B /* Masonry */,
 				404D9C121DABAB3600C37987 /* SDWebImage */,
 			);
 			name = Vender;
@@ -226,6 +318,7 @@
 		4088938E1DAAA3CB00726C6E /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				404C8B591DAC86D100DBE93B /* ZLPhotoPreviewView */,
 				404D9C0A1DABA1C100C37987 /* ZLBannerView */,
 				404D9C031DAB8E9000C37987 /* ZLInfiniteScrollingView */,
 				404AA9F21DAA578D001EA811 /* ZLAdCollectionReusableView.h */,
@@ -239,6 +332,7 @@
 		4088938F1DAAA3DD00726C6E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				404AA9DF1DA9DCCA001EA811 /* LaunchScreen.storyboard */,
 				4088938B1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.h */,
 				4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */,
 			);
@@ -263,6 +357,8 @@
 				404AA9F01DAA5748001EA811 /* ZLDiscoverCollectionViewController.m */,
 				404D9C071DAB939B00C37987 /* ZLDiscoverDetailViewController.h */,
 				404D9C081DAB939B00C37987 /* ZLDiscoverDetailViewController.m */,
+				404C8B631DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.h */,
+				404C8B641DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,24 +435,37 @@
 			files = (
 				404D9C091DAB939B00C37987 /* ZLDiscoverDetailViewController.m in Sources */,
 				404D9C061DAB8EB600C37987 /* ZLInfiniteScrollingCell.m in Sources */,
+				404C8B861DAC97D200DBE93B /* NSArray+MASAdditions.m in Sources */,
+				404C8B881DAC97D200DBE93B /* View+MASAdditions.m in Sources */,
 				404D9C401DABAB3600C37987 /* UIImage+WebP.m in Sources */,
+				404C8B851DAC97D200DBE93B /* MASViewConstraint.m in Sources */,
 				404D9C101DABA25800C37987 /* ZLBannerCollectionViewCell.m in Sources */,
 				404D9C3D1DABAB3600C37987 /* UIButton+WebCache.m in Sources */,
+				404C8B5C1DAC871E00DBE93B /* ZLPhotoPreviewView.m in Sources */,
 				404D9C3A1DABAB3600C37987 /* SDWebImageDownloaderOperation.m in Sources */,
+				404C8B5F1DAC879000DBE93B /* ZLPhotoPreviewViewCollectionViewCell.m in Sources */,
 				404D9C0D1DABA1DB00C37987 /* ZLBannerView.m in Sources */,
 				404D9C361DABAB3600C37987 /* SDImageCache.m in Sources */,
+				404C8B651DAC8C1E00DBE93B /* ZLPhotoPreviewViewController.m in Sources */,
 				404D9C351DABAB3600C37987 /* NSData+ImageContentType.m in Sources */,
 				404D9C021DAB8E5800C37987 /* ZLInfiniteScrollingView.m in Sources */,
 				404D9C381DABAB3600C37987 /* SDWebImageDecoder.m in Sources */,
 				404AA9D91DA9DCCA001EA811 /* ViewController.m in Sources */,
 				404D9C411DABAB3600C37987 /* UIImageView+HighlightedWebCache.m in Sources */,
+				404C8B841DAC97D200DBE93B /* MASViewAttribute.m in Sources */,
+				404C8B831DAC97D200DBE93B /* MASLayoutConstraint.m in Sources */,
+				404C8B801DAC97D200DBE93B /* MASCompositeConstraint.m in Sources */,
+				404C8B621DAC88FF00DBE93B /* ZLPhotoPreviewViewModel.m in Sources */,
 				404AA9D61DA9DCCA001EA811 /* AppDelegate.m in Sources */,
+				404C8B871DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				404D9C391DABAB3600C37987 /* SDWebImageDownloader.m in Sources */,
 				404D9C371DABAB3600C37987 /* SDWebImageCompat.m in Sources */,
+				404C8B821DAC97D200DBE93B /* MASConstraintMaker.m in Sources */,
 				404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */,
 				404D9C3E1DABAB3600C37987 /* UIImage+GIF.m in Sources */,
 				404D9C3F1DABAB3600C37987 /* UIImage+MultiFormat.m in Sources */,
 				4088938D1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m in Sources */,
+				404C8B891DAC97D200DBE93B /* ViewController+MASAdditions.m in Sources */,
 				404D9C3C1DABAB3600C37987 /* SDWebImagePrefetcher.m in Sources */,
 				404AA9D31DA9DCCA001EA811 /* main.m in Sources */,
 				404D9C341DABAB3600C37987 /* MKAnnotationView+WebCache.m in Sources */,
@@ -364,6 +473,7 @@
 				404D9C431DABAB3600C37987 /* UIView+WebCacheOperation.m in Sources */,
 				404D9C3B1DABAB3600C37987 /* SDWebImageManager.m in Sources */,
 				404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */,
+				404C8B811DAC97D200DBE93B /* MASConstraint.m in Sources */,
 				404AA9F11DAA5748001EA811 /* ZLDiscoverCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
