@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZLDiscoverCollectionViewController.h"
+#import "ZLPhotoManager.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Tutorial-UICollectionView";
+
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeInfoLight];
     button.center = self.view.center;

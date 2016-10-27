@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40434BE71DBF244C003AEED5 /* ZLPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40434BE61DBF244C003AEED5 /* ZLPhotoManager.m */; };
 		404AA9D31DA9DCCA001EA811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9D21DA9DCCA001EA811 /* main.m */; };
 		404AA9D61DA9DCCA001EA811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9D51DA9DCCA001EA811 /* AppDelegate.m */; };
 		404AA9D91DA9DCCA001EA811 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AA9D81DA9DCCA001EA811 /* ViewController.m */; };
@@ -50,10 +51,13 @@
 		404D9C411DABAB3600C37987 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C2F1DABAB3600C37987 /* UIImageView+HighlightedWebCache.m */; };
 		404D9C421DABAB3600C37987 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C311DABAB3600C37987 /* UIImageView+WebCache.m */; };
 		404D9C431DABAB3600C37987 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D9C331DABAB3600C37987 /* UIView+WebCacheOperation.m */; };
+		4087386A1DBDF83700495F61 /* ZLSharingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408738691DBDF83700495F61 /* ZLSharingMenuViewController.m */; };
 		4088938D1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40434BE51DBF244C003AEED5 /* ZLPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoManager.h; sourceTree = "<group>"; };
+		40434BE61DBF244C003AEED5 /* ZLPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoManager.m; sourceTree = "<group>"; };
 		404AA9CE1DA9DCCA001EA811 /* Tutorial-UICollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tutorial-UICollectionView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		404AA9D21DA9DCCA001EA811 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		404AA9D41DA9DCCA001EA811 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 		404D9C311DABAB3600C37987 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		404D9C321DABAB3600C37987 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		404D9C331DABAB3600C37987 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		408738681DBDF83700495F61 /* ZLSharingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSharingMenuViewController.h; sourceTree = "<group>"; };
+		408738691DBDF83700495F61 /* ZLSharingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSharingMenuViewController.m; sourceTree = "<group>"; };
 		4088938B1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
 		4088938C1DAAA3BD00726C6E /* ZLDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +189,8 @@
 				408893921DAAA41100726C6E /* Controllers */,
 				408893911DAAA3F000726C6E /* Views */,
 				404AA9D11DA9DCCA001EA811 /* Supporting Files */,
+				40434BE51DBF244C003AEED5 /* ZLPhotoManager.h */,
+				40434BE61DBF244C003AEED5 /* ZLPhotoManager.m */,
 			);
 			path = "Tutorial-UICollectionView";
 			sourceTree = "<group>";
@@ -315,9 +323,19 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		408738641DBDF47900495F61 /* ZLSharingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				408738681DBDF83700495F61 /* ZLSharingMenuViewController.h */,
+				408738691DBDF83700495F61 /* ZLSharingMenuViewController.m */,
+			);
+			name = ZLSharingMenu;
+			sourceTree = "<group>";
+		};
 		4088938E1DAAA3CB00726C6E /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				408738641DBDF47900495F61 /* ZLSharingMenu */,
 				404C8B591DAC86D100DBE93B /* ZLPhotoPreviewView */,
 				404D9C0A1DABA1C100C37987 /* ZLBannerView */,
 				404D9C031DAB8E9000C37987 /* ZLInfiniteScrollingView */,
@@ -459,6 +477,7 @@
 				404AA9D61DA9DCCA001EA811 /* AppDelegate.m in Sources */,
 				404C8B871DAC97D200DBE93B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				404D9C391DABAB3600C37987 /* SDWebImageDownloader.m in Sources */,
+				4087386A1DBDF83700495F61 /* ZLSharingMenuViewController.m in Sources */,
 				404D9C371DABAB3600C37987 /* SDWebImageCompat.m in Sources */,
 				404C8B821DAC97D200DBE93B /* MASConstraintMaker.m in Sources */,
 				404AA9F41DAA578D001EA811 /* ZLAdCollectionReusableView.m in Sources */,
@@ -470,6 +489,7 @@
 				404AA9D31DA9DCCA001EA811 /* main.m in Sources */,
 				404D9C341DABAB3600C37987 /* MKAnnotationView+WebCache.m in Sources */,
 				404D9C421DABAB3600C37987 /* UIImageView+WebCache.m in Sources */,
+				40434BE71DBF244C003AEED5 /* ZLPhotoManager.m in Sources */,
 				404D9C431DABAB3600C37987 /* UIView+WebCacheOperation.m in Sources */,
 				404D9C3B1DABAB3600C37987 /* SDWebImageManager.m in Sources */,
 				404AA9F71DAA57B0001EA811 /* ZLMemberCollectionReusableView.m in Sources */,
